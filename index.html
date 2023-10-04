@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap</title>
+
+ 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/css/bootstrap.min.css" integrity="sha512-rt/SrQ4UNIaGfDyEXZtNcyWvQeOq0QLygHluFQcSjaGB04IxWhal71tKuzP6K8eYXYB6vJV4pHkXcmFGGQ1/0w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/js/bootstrap.bundle.min.js" integrity="sha512-igl8WEUuas9k5dtnhKqyyld6TzzRjvMqLC79jkgT3z02FvJyHAuUtyemm/P/jYSne1xwFI06ezQxEwweaiV7VA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+ <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+    <div class="container-fluid">
+      <a href="#" class="navbar-brand"><img src="img/logo1.png" ></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collaps navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+          <a href="#links" class="nav-link">Ссылки</a>
+          </li>
+          <li class="nav-item">
+          <a href="#form" class="nav-link">Форма</a>
+          </li>
+          <li class="nav-item">
+          <a href="#table" class="nav-link">Таблица</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+ </nav>
+ <div class="carousel slide" data-right="carousel" id="slides">
+  <ul class="carousel-indicators">
+    <li data-target="#slides" data-slide-to="0" ></li>
+    <li data-target="#slides" data-slide-to="1" ></li>
+    <li data-target="#slides" data-slide-to="2" ></li>
+  </ul>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/slider_3.jpeg">
+        <div class="carousel-caption">
+          <h1 class="display-2">Korben</h1>
+          <h3>Научитесь программировать</h3>
+          <button type="button" class="btn btn-outline-light btn-lg">Посмотреть</button>
+          <button type="button" class="btn btn-warning btn-lg">Демо сайта</button>
+        </div>
+      </div>
+      <div class="carousel-item ">
+        <img src="img/slider_2.jpg">
+      </div>
+      <div class="carousel-item ">
+        <img src="img/slider_1.jpg">
+      </div>
+    </div>
+ 
+  </div>
+  <!-- <div class="container-fluid">
+  <div class="row jumbotron">
+    <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
+      
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-3 col-lg-2 col-xl-2">
+      <a href="#"><button class="btn btn-success btn-lg" type="button">Читать далее</button></a>
+    </div>
+  </div>
+</div> -->
+  <div class="container-fluid">
+    <div class="row text-center alert">
+      <div class="col-12">
+        <h1 class="display-4">Список ссылок</h1>
+      </div>
+      <hr>
+      <!-- <div class="col-12">
+        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum cum neque voluptate ut quidem sunt? Vitae, id ratione neque quibusdam, ad eos dolore ipsam consequuntur dolorum quasi nobis repellat eaque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti enim, voluptatum assumenda voluptates officia, qui hic ullam ut, illum ad eum dolorum aliquid cumque debitis quam possimus velit corrupti eligendi?</p>
+      </div> -->
+    </div>
+  </div>
+  <div class="container-fluid padding">
+    <div class="row text-center padding">
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <i class="fa fa-tasks" aria-hidden="true"></i>
+        <h3><a href="http://kubsu.ru">КубГУ</a></h3>
+        
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <i class="fas fa-bold"></i>
+        <h3><a href="https://kubsu.ru">КубГУ,но https</a></h3>
+        
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <i class="fas fa-css3"></i>
+        <a href="http://kubsu.ru"
+        id="flower"><img src="img/image.jpg" alt="фото цветка" height="200"
+            /></a>
+        <p>Ссылка фото.</p>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <i class="fas fa-bold"></i>
+        <h3><a href="/Users">Внутренняя</a></h3>
+        
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <i class="fas fa-bold"></i>
+        <h3><a href="/">Главная</a></h3>
+        
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4" id="links">
+        <i class="fas fa-bold"></i>
+        <h3><a href="#flower">Ссылка на цветок</a></h3>
+        
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <i class="fas fa-bold"></i>
+        <h3><a
+          href="https://google.com/page?param1=value1&amp;param2=value2&amp;param3=value3"
+          >Ссылка с 3-мя параметрами</a
+        ></h3>   
+      </div>
+
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <i class="fas fa-bold"></i>
+        <h3><a
+          href="http://google.com?id=1">Ссылка</a></h3>  
+      </div>
+
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <i class="fas fa-bold"></i>
+        <h3><a href="index.html">Относительная на текущий</a></h3>
+      </div>
+
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <i class="fas fa-bold"></i>
+        <h3><a href="./about.html">about</a></h3>
+      </div>
+
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <i class="fas fa-bold"></i>
+        <h3><a href="./one/upOne.html">Относительная на католог выше</a></h3>
+      </div>
+
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <i class="fas fa-bold"></i>
+        <h3><a href="./one/two/upSecond.html">Относительная на 2 каталога выше</a></h3>
+      </div>
+
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <i class="fas fa-bold"></i>
+        <h3><p>
+          Контекстная на
+          <a href="https://www.kubsu.ru/index.php">официальный сайт</a>
+          Кубгу
+        </p></h3>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <i class="fas fa-bold"></i>
+        <h3><a href="https://ru.wikipedia.org/wiki/HTML5#Свойства"
+          >Ссылка на фрагмент страницы стороннего сайта</a
+        ></h3>
+      </div>
+       <div class="col-xs-12 col-sm-6 col-md-4">
+      
+        <img src="img/links.jpg" alt="" height="370" width="400" usemap="#circle" usemap="#rect">
+        <map name="circle" name="rect">
+            <area shape="circle" coords="93,185,45" href="http://kubsu.ru" alt="">
+            <area shape="rect" coords="181,155,374,214" href="http://kubsu.ru" alt="">
+        </map>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-4">
+      <i class="fas fa-bold"></i>
+      <h3><a href="">Пустая ссылка</a></h3>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-4">
+      <i class="fas fa-bold"></i>
+      <h3><a title="Nohref">without href</a></h3>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-4">
+      <i class="fas fa-bold"></i>
+      <h3><a href="http://google.com/" rel="nofollow"
+        >Запрещен переход поисковикам</a
+      ></h3>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-4">
+      <i class="fas fa-bold"></i>
+      <h3><a href="http://google.com/" rel="nofollow"
+        ><!--<noindex>-->Запрещен для индексации поисковикам<!--</noindex>--></a
+      ></h3>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-4">
+      <i class="fas fa-bold"></i>
+      <h3><a href="http://google.com/" title="google">Гугл</a></h3>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-4">
+      <i class="fas fa-bold"></i>
+      <h3><a href="https://html5book.ru/osnovy-html/#part4" title="HTML"
+        >HTML5 book</a
+      ></h3>
+    </div>
+    </div>
+    <hr class="my-4">
+    <div class="container" id="tableAndForm">
+      <div id="table" class="order-1">
+      <table id="Table" class="table table-bordered table_center table-striped">
+        <thead class="thead-light">
+            <tr>
+                <th colspan="4" class="text-center">
+                    Programming Languages
+                </th>
+            </tr>
+            <tr>
+                <th>назв.</th>
+                <th>№</th>
+                <th>%</th>
+                <th>основ. сфера</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="table-primary">
+                <td>JavaScript</td>
+                <td>1</td>
+                <td>67.8%</td>
+                <td>Web-разработка</td>
+            </tr>
+            <tr class="table-secondary">
+                <td>HTml/CSS</td>
+                <td>2</td>
+                <td>63.5%</td>
+                <td>Web-разработка</td>
+            </tr>
+            <tr class="table-primary">
+                <td>SQL</td>
+                <td>3</td>
+                <td>54.4%</td>
+                <td>Управление данными</td>
+            </tr>
+            <tr class="table-secondary">
+                <td>Python</td>
+                <td>4</td>
+                <td>41.7%</td>
+                <td>ПО разработка</td>
+            </tr>
+            <tr class="table-primary">
+                <td>Java</td>
+                <td>5</td>
+                <td>41.1%</td>
+                <td>ПО разработка</td>
+            </tr>
+            <tr class="table-secondary">
+                <td>PowerShell</td>
+                <td>6</td>
+                <td>36.6%</td>
+                <td>автом. процессов</td>
+            </tr>
+        </tbody>
+    </table>
+      </div>
+    
+    
+      <div id="form" class="order-2">
+    <h1 class="text-center">Форма HTML</h1>
+    <form action="/" method="POST">
+          <div class="form-group">
+              <label for="FCs">ФИО:</label>
+              <input name="FCs" type="text" class="form-control" placeholder="Фамилия Имя Отчество" required>
+          </div>
+          <div class="form-group">
+              <label for="number">Номер телефона:</label>
+              <input name="number" type="tel" class="form-control" placeholder="+7" required>
+          </div>
+          <div class="form-group">
+              <label for="email">Ваш email:</label>
+              <input name="email" type="email" class="form-control" placeholder="example@example.com" required>
+          </div>
+          <div class="form-group">
+              <label for="date">Дата рождения:</label>
+              <input name="date" type="date" class="form-control" value="2023-09-08" required>
+          </div>
+          <div class="form-group">
+              <label>Пол:</label><br>
+              <div class="form-check form-check-inline">
+                  <input type="radio" class="form-check-input" name="radio" value="Значение1" checked>
+                  <label class="form-check-label">Мужской</label>
+              </div>
+              <div class="form-check form-check-inline">
+                  <input type="radio" class="form-check-input" name="radio" value="Значение2">
+                  <label class="form-check-label">Женский</label>
+              </div>
+          </div>
+          <div class="form-group">
+              <label for="languages">Любимый язык программирования:</label>
+              <select name="languages" class="form-control" multiple size="8">
+                  <option value="Значение1" selected>Pascal</option>
+                  <option value="Значение2" selected>C</option>
+                  <option value="Значение3" selected>C++</option>
+                  <option value="Значение4" selected>JavaScript</option>
+                  <option value="Значение5" selected>PHP</option>
+                  <option value="Значение6" selected>Python</option>
+                  <option value="Значение7" selected>Java</option>
+                  <option value="Значение8" selected>Haskell</option>
+                  <option value="Значение9" selected>Clojure</option>
+                  <option value="Значение10" selected>Prolog</option>
+                  <option value="Значение11" selected>Scala</option>
+              </select>
+          </div>
+          <div class="form-group">
+              <label for="biography">Биография:</label>
+              <textarea name="biography" class="form-control" placeholder="..."></textarea>
+          </div>
+          <div class="form-check">
+              <input type="checkbox" class="form-check-input" name="contract">
+              <label class="form-check-label">С контрактом ознакомлен(а)</label>
+          </div>
+          <button class="btn btn-primary" type="submit">Сохранить</button>
+      </form>
+      </div>
+    </div>
+    
+  </div>
+  <footer class="bg-dark text-white text-center py-3 px-0">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6">
+                <!-- Текст футера, если нужен -->
+                <p>&copy; 2023 Евко Артём</p>
+            </div>
+            <div class="col-md-6">
+                <!-- Ссылки на социальные сети -->
+                <a href="https://vk.com" class="text-white mx-2">ВКонтакте</a>
+                <a href="https://t.me" class="text-white mx-2">Telegram</a>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
